@@ -1,0 +1,78 @@
+{
+    "path": {
+        "production": "dist",
+        "development": "dev",
+        "source": "src",
+
+        "font": {
+            "src": "fonts",
+            "dest": "fonts"
+        },
+        "html": {
+            "partials": "partials"
+        },
+        "image": {
+            "src": "images",
+            "dest": "images"
+        },
+        "script": {
+            "src": "scripts",
+            "dest": "scripts",
+            "vendor": "scripts/vendor"
+        },
+        "sprite": {
+            "src": "sprites",
+            "dest": "images"
+        },
+        "icon": {
+            "src": "icons",
+            "dest": "icons"
+        },
+        "style": {
+            "src": "styles",
+            "dest": "styles",
+            "vendor": "styles/vendor"
+        },
+        "misc": {
+            "src": "misc",
+            "dest": ""
+        }
+    },
+
+    "formats": {
+        "font": ["eot", "otf", "ttf", "svg", "woff", "woff2"],
+        "image": ["jpg", "png", "svg"],
+        "misc": ["ico", "png", "xml", "txt"],
+        "script": "js",
+        "style": "scss"
+    },
+
+    "partials": {
+        "prefix": "<!-- partial:",
+        "suffix": " -->",
+        "context": {
+            "compileJs": false
+        }
+    },
+
+    "uglify": {
+        "preserveComments": "license"
+    },
+
+    "sprite": {
+        "name": "sprite.png"
+    },
+
+    "autoprefixer": {
+        "browsers": "last 2 version"
+    },
+
+    "csso": {
+        "restructure": true,
+        "comments": "first-exclamation"
+    },
+
+    "server": {
+        "port": 9000
+    }
+}

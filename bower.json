@@ -1,0 +1,27 @@
+{
+  "name": "barebones",
+  "version": "1.0.0",
+  "authors": [
+    "Anton Suprun <anton.suprun@popel.com.ua>"
+  ],
+  "description": "Barebones HTML project",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.3",
+    "jquery": "2.2.0",
+    "bootstrap": "3.3.6",
+    "jquery-mousewheel": "3.1.13",
+    "selectize": "0.12.1",
+    "selectize-scss": "0.9.0",
+    "normalize-scss": "3.0.3"
+  },
+  "resolutions": {
+    "sifter": "0.4.x"
+  }
+}

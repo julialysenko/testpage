@@ -1,0 +1,54 @@
+{
+  "name": "barebones",
+  "description": "HTML project",
+  "version": "1.1.0",
+  "keywords": [
+    "css",
+    "sass",
+    "web",
+    "html",
+    "front-end"
+  ],
+  "homepage": "https://github.com/popel-agency/barebones",
+  "author": "POPEL Agency",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/popel-agency/barebones.git"
+  },
+  "bugs": {
+    "url": "https://github.com/popel-agency/barebones/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "css-mqpacker": "^4.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-connect": "^2.3.1",
+    "gulp-file-include": "^0.13.7",
+    "gulp-filter": "^3.0.1",
+    "gulp-if": "^2.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sequence": "^0.4.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-useref": "^3.0.5",
+    "lazypipe": "^1.0.1",
+    "portfinder": "^1.0.1",
+    "postcss": "^5.0.16",
+    "postcss-csso": "^1.1.2",
+    "postcss-easings": "^0.3.0",
+    "postcss-import": "^8.1.2",
+    "postcss-sprites": "^3.1.0"
+  },
+  "engines": {
+    "node": "~4.0.0",
+    "npm": "~3.7.2"
+  },
+  "private": true
+}
