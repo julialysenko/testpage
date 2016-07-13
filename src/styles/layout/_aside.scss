@@ -1,11 +1,115 @@
-/* Barebones Compass layout styles
- *
- * Aside styles
- */
 
-.layout-aside {
-    display: inline-block;
-    width: $layout-aside-width;
-    float: left;
-    margin-right: $layout-aside-margin-right;
+._4f_5 {
+    background: #fff;
+    padding-bottom: 0;
+    p, 
+    ol, 
+    ul, 
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6 {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+        color: #8d8e8f;
+        background: transparent;
+        transition: color 250ms;
+        &:hover, 
+        &:visited {
+            text-decoration: none;
+            color: #8d8e8f;
+            background: transparent;
+            transition: color 250ms;
+        }
+    }
+}
+
+._4f_6 {
+    list-style: none;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+}
+
+._4f_7 {
+    background: #282828;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    &:hover {
+        ._4f_a {
+            opacity: .8;
+            transform: scale(1.1, 1.1);
+        }
+    }
+}
+
+@media (min-width: 767px) {
+    ._4f_7 {
+        float: left;
+        width: 33.33333333% !important;
+    }
+}
+
+._4f_6::before, 
+._4f_7::before, 
+._4f_6::after, 
+._4f_7::after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+._4f_8 {
+    display: block;
+}
+
+._4f_a {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: .3;
+    text-align: center;
+    transition: transform .3s, opacity .3s;
+    width: 100%;
+}
+
+._4f_b {
+    box-sizing: border-box;
+    padding: 0 32px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+}
+
+._4f_c {
+    color: #a4a5a6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+._4f_d {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
 }

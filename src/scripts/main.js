@@ -16,4 +16,12 @@
             };
         }
     });
+
+    function() {
+        var t = n(".shell-search");
+        n(this).toggleClass("active");
+        t.toggleClass("expanded");
+        t.hasClass("expanded") ? (t.find('input[type="search"]').focus(), o.css("height", "auto")) : o.css("height", "")
+    };
+
 })(window.jQuery);
