@@ -1,26 +1,85 @@
 .container.dark-blue {
+    position: relative;
     background: #323a45;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: white;
+      font: 300 35px/52px "Open Sans", "open-sans", sans-serif;
+    }
 }
 .footer-signup {
   text-align: center;
   padding: 160px 0 145px;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  form {
+      display: inline-block;
+      margin-bottom: 31px;
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 18px;
+        color: #8a959e;
+        margin: 16px 0px 0px 16px;
+        font-weight: 400;
+      }
+      p {
+        position: relative;
+        float: left;
+        margin: 0;
+        font-size: 18px;
+        font-family: "Open Sans", "open-sans", sans-serif;
+        line-height: 1.8em;
+        color: #747c83;
+        i {
+          position: absolute;
+          top: 18px;
+          left: 15px;
+        }
+        label {
+          margin-left: 50px;
+        }
+        input[type=text],
+        input[type=password] {
+          background: white;
+          width: 232px;
+          line-height: 1em;
+          border-radius: 3px;
+          margin-right: 10px;
+          padding-left: 48px;
+          border: 1px solid #d4d7da;
+        }
+        input {
+          border-radius: 0;
+          outline: none;
+          resize: none;
+          font-family: "Open Sans", "open-sans", sans-serif;
+          padding: 18px 15px;
+        }
+     }
+  }
 }
-.footer-signup h2 {
-  font-size: 30px;
+
+.container .inside {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    clear: both;
+    &::before,
+    &::after {
+      content: " ";
+      display: table;
+    }
 }
-.footer-signup p i {
-  position: absolute;
-  top: 18px;
-  left: 15px;
-}
-.footer-signup p label {
-  margin-left: 50px;
-}
-.footer-signup p input[type=text], .footer-signup p input[type=password] {
-  width: 280px;
-  height: 63px;
-  padding-left: 48px;
-}
+
 @media (max-width: 1215px) {
   .footer-signup p input[type=text], .footer-signup p input[type=password] {
     width: 270px;
@@ -44,16 +103,9 @@
     clear: both;
 }
 
-.container.dark-blue h1, .container.dark-blue h2, .container.dark-blue h3, .container.dark-blue h4, .container.dark-blue h5 {
-    color: white;
-}
-
-form {
-    display: inline-block;
-    margin-bottom: 31px;
-}
-
-.button a, p.button input, p.button button {
+.button a,
+p.button input,
+p.button button {
     display: inline-block;
     padding: 21px 40px 19px;
     background: #ff3366;
@@ -66,16 +118,69 @@ form {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
-    -moz-transition: background 0.3s;
-    -o-transition: background 0.3s;
-    -webkit-transition: background 0.3s;
     transition: background 0.3s;
+    &:hover {
+       background: #f42156;
+    }
+    &:focus {
+       outline: none;
+    }
 }
 
-.signup-form-wrapper button, .hero-signup-wrapper button {
+.signup-form-wrapper button,
+.hero-signup-wrapper button {
     padding-top: 0px;
     padding-bottom: 0px;
     height: 62px;
     line-height: 62px;
     margin-top: 1px;
+}
+
+.ico-user {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    height: 24px;
+    width: 24px;
+    //background-image: url('../sprites/sprite.png');
+    background-position: 0px -474px;
+    background-repeat: no-repeat;
+}
+
+.ico-email {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    height: 24px;
+    width: 24px;
+    //background-image: url('../sprites/sprite.png');
+    background-position: 0px -386px;
+    background-repeat: no-repeat;
+}
+
+.ico-lock {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    height: 24px;
+    width: 24px;
+    //background: url('../sprites/sprite.png');
+    background-position: 0px -430px;
+    background-repeat: no-repeat;
+}
+
+p.terms {
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #747c83;
+    a {
+      color: #747c83;
+      text-decoration: underline;
+      &:hover {
+        color: #fff;
+      }
+    }
 }

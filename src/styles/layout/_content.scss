@@ -270,7 +270,32 @@ main, section {
 		width:100%;
 	}
 }
-
+mac .hero--female {
+	background:#eeeeee;
+}
+mac .hero--male {
+	background:#efefef;
+}
+@media (min-width: 400px) {
+	mac .hero__background-container--female {
+		background-image:url("/static/images/business/homepage/background--mac--female-vflXgX00m.jpg")
+	}
+}
+@media (min-width: 400px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 400px) and (min-resolution: 144dpi) {
+	mac .hero__background-container--female {
+		background-image:url("/static/images/business/homepage/background--mac--female@2x-vflWKI-NG.jpg")
+	}
+}
+@media (min-width: 400px) {
+	mac .hero__background-container--male {
+		background-image:url("/static/images/business/homepage/background--mac--male-vfljd3ybY.jpg")
+	}
+}
+@media (min-width: 400px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 400px) and (min-resolution: 144dpi) {
+	mac .hero__background-container--male {
+		background-image:url("/static/images/business/homepage/background--mac--male@2x-vflzJO79R.jpg")
+	}
+}
 .hero--female {
 	background:#f7f7f7;
 }
